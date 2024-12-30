@@ -1,5 +1,10 @@
+faiss-cpu
+groq
+langchain-groq
+pyPDF2
+langchain_google_genai
 langchain
-openai
-huggingface_hub
-python-dotenv
 streamlit
+langchain_community
+python-dotenv
+pypdf

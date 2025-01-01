@@ -90,11 +90,6 @@ The **Interview Preparation Q&A Chatbot** is a powerful Streamlit-based applicat
 - **Google Generative AI Embeddings**: Generates embeddings for text data.
 - **PyPDFDirectoryLoader**: Loads and processes PDF documents.
 
-## Future Enhancements
-- Add support for more file types (e.g., Word, Excel).
-- Implement multi-language support for non-English documents.
-- Integrate more powerful LLMs or domain-specific models.
-- Optimize the user interface for better interaction and aesthetics.
 
 ## Directory Structure
 ```plaintext
@@ -104,6 +99,12 @@ The **Interview Preparation Q&A Chatbot** is a powerful Streamlit-based applicat
 ├── .env                       # Environment variables file
 └── requirements.txt           # Dependencies list
 ```
+
+## Future Enhancements
+- Add support for more file types (e.g., Word, Excel).
+- Implement multi-language support for non-English documents.
+- Integrate more powerful LLMs or domain-specific models.
+- Optimize the user interface for better interaction and aesthetics.
 
 
 ## Author

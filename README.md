@@ -4,9 +4,9 @@
 The **Interview Preparation Q&A Chatbot** is a powerful Streamlit-based application designed to assist with interview preparation by providing concise and accurate answers to user queries based on context extracted from provided study materials. This application leverages advanced large language models (LLMs) and embeddings to enable document-based question-answering. It is specifically tailored for interview preparation on subjects like DBMS, SQL, HR, OS, and related topics.
 
 
-**Application Link**: [Interview Preparation Q&A Chatbot](https://smartinterviewbot-cvoxuk5tmbznytsp6frhdy.streamlit.app/)
+**Application Link**: [Interview Preparation Q&A Chatbot](https://smartinterviewbot-jkvpqm6qbi2z9upktw9tan.streamlit.app/)
 
-
+![output](images/dbms.png)
 
 ## Features
 1. **Document Ingestion**

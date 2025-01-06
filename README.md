@@ -6,7 +6,7 @@ The **Interview Preparation Q&A Chatbot** is a powerful Streamlit-based applicat
 
 **Application Link**: [Interview Preparation Q&A Chatbot](https://smart-interview-bot-b7pshyhw8syhmdzhf6q6mu.streamlit.app/)
 
-![output](images/dbms.png)
+![output](images/interview.png)
 
 ## Features
 1. **Document Ingestion**

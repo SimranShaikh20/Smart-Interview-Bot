@@ -67,8 +67,8 @@ When a user enters a query, the system processes the input to understand the **c
 ### 🛠️ Setup Steps
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/your-repo/interview-chatbot.git
-   cd interview-chatbot
+   git clone https://github.com/SimranShaikh20/Smart-Interview-Bot.git
+   cd Smart-Interview-Bot
    ```
 2. **Create and activate a virtual environment** (optional but recommended)
    ```bash
@@ -94,4 +94,3 @@ Contributions are welcome! If you'd like to improve this project, feel free to f
 This project is licensed under the **MIT License**.
 
 🚀 **Happy Coding & Good Luck with Your Interviews!** 💡🎯
-

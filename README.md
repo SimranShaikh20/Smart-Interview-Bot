@@ -1,52 +1,66 @@
 # 🚀 Interview Preparation Q&A Chatbot
 
+<p>
+  <img src="https://img.shields.io/badge/Prompt%20Engineering-800080?logo=openai&logoColor=white" alt="Prompt Engineering" />
+  <img src="https://img.shields.io/badge/LangChain-0F4C81?logo=langchain&logoColor=white" alt="LangChain" />
+  <img src="https://img.shields.io/badge/RAG-FF6F61?logo=semanticweb&logoColor=white" alt="RAG (Retrieval-Augmented Generation)" />
+  <img src="https://img.shields.io/badge/Streamlit-FF4B4B?logo=streamlit&logoColor=white" alt="Streamlit" />
+</p>
+
+---
+
 ## 📌 Project Overview
-The **Interview Preparation Q&A Chatbot** is a powerful **Streamlit-based** application designed to assist with interview preparation by providing **concise and accurate answers** to user queries based on study materials. This application leverages **Large Language Models (LLMs)** and **embeddings** to enable **document-based question-answering** for subjects like **DBMS, SQL, HR, OS, and more**.
+
+The **Interview Preparation Q&A Chatbot** is a smart and efficient **Streamlit-based application** designed to help users prepare for interviews. It uses **Large Language Models (LLMs)** and **embeddings** to answer questions based on uploaded study materials. The chatbot supports subjects like **DBMS, SQL, HR, OS**, and more by enabling **context-aware document-based Q&A**.
+
+---
+
+## 🚀 Live Demo
+
+🔗 [Click Here to Try the Chatbot](https://smart-interview-bot-b7pshyhw8syhmdzhf6q6mu.streamlit.app/)
+
+---
 
 ## ✨ Features
+
 ### 📝 Document Ingestion
-- Loads documents from a specified directory containing **PDF files**.
-- Automatically splits documents into **smaller, manageable chunks** using a recursive text splitter for efficient processing.
+- Loads **PDF documents** from a specified folder.
+- Splits text into **smaller, manageable chunks** using a recursive text splitter.
 
 ### 🔍 Vector Store Creation
-- Embeds document chunks using **Google Generative AI Embeddings**.
-- Builds a **FAISS (Facebook AI Similarity Search) vector database** for efficient similarity searches.
+- Converts text chunks to embeddings using **Google Generative AI Embeddings**.
+- Stores them in a **FAISS vector database** for efficient retrieval.
 
 ### 💡 Contextual Q&A
-- Uses the **ChatGroq LLM (Llama3-8b-8192)** to answer questions.
-- Employs a retriever to fetch **relevant document chunks** for context-based Q&A.
+- Uses **ChatGroq LLM (Llama3-8b-8192)** to answer questions.
+- Retrieves **most relevant document chunks** for context-aware responses.
 
-### 🎭 Interactive Interface
-- Simple and user-friendly **Streamlit UI**.
-- Provides an **input box** for user queries.
-- Allows users to **upload documents** for Q&A by clicking a button.
-- Displays retrieved **document context and similarity matches** in an expandable section.
+### 🎭 Interactive UI
+- Built with **Streamlit** for ease of use.
+- Users can **upload documents** and **enter queries**.
+- Shows **retrieved context** and **similarity matches**.
 
-### ⏱️ Performance Metrics
-- Tracks and displays **response times** for Q&A tasks.
+### ⏱️ Performance Tracking
+- Displays **response time** for each query to monitor efficiency.
 
-## ⚙️ How the Project Works
-### 🎨 User Interface (Streamlit)
-The chatbot is built using **Streamlit**, allowing users to interact via an intuitive web interface where they can input their questions related to interview preparation.
+---
+
+## ⚙️ How It Works
+
+### 🎨 Streamlit Interface
+Users interact with the chatbot through a simple **web interface**, entering questions or uploading PDFs.
 
 ### 📥 Input Processing
-When a user enters a query, the system processes the input to understand the **context and intent** of the question.
+User queries are transformed into **vector embeddings** using Google AI to understand their semantic meaning.
 
-### 🧠 Embedding Generation
-- The user's query is converted into a **vector embedding** using **Google AI embeddings**.
-- Embeddings capture **semantic meaning**, allowing for accurate retrieval of relevant information.
+### 📚 FAISS Vector Store
+Document chunks are stored as vectors. A **similarity search** finds the best-matching chunks for any query.
 
-### 📚 Vector Database (FAISS)
-- **FAISS** is used for **efficient similarity search and clustering** of dense vectors.
-- Interview-related data is stored in a **vectorized form** in the FAISS database for **fast and precise retrieval**.
+### 🔎 Retrieval + Generation (RAG)
+The app uses **RAG (Retrieval-Augmented Generation)** to fetch relevant context and generate accurate, natural responses via **ChatGroq LLM**.
 
-### 🔎 Similarity Search
-- The system performs a **similarity search** in the FAISS database to find the most relevant documents or answers.
-- **FAISS compares** the query embedding with stored embeddings to **retrieve the closest matches**.
-
-### 🤖 Response Generation (ChatGroq LLM)
-- The retrieved data is passed to **ChatGroq LLM**, which processes the information and generates a **tailored, human-like response**.
-- The **LLM ensures contextually appropriate and clear answers**.
+### 📤 Response Output
+Answers are displayed back in the UI, along with expandable retrieved context sections.
 
 ### 📤 Output to User
 - The generated response is **displayed** to the user in the **Streamlit interface**.

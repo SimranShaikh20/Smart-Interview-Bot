@@ -122,15 +122,13 @@ with st.sidebar:
         st.error("❌ Google API Key Missing")
     
     # Vector Database Status
-    st.subheader("🗄️ Database Status")
+    
     if "vectors" in st.session_state:
         st.success("✅ Vector Database Ready")
         if "docs" in st.session_state:
             st.info(f"📄 Documents: {len(st.session_state.docs)}")
         if "final_documents" in st.session_state:
             st.info(f"📝 Chunks: {len(st.session_state.final_documents)}")
-    else:
-        st.warning("⏳ Vector Database Not Ready")
     
     st.markdown("---")
     st.markdown("### 📚 Supported Topics")
